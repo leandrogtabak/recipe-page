@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+:root {
+    --primary-color: #fe5303;
+    --heading-font: 'Playfair Display', serif;
+
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+    --space-2xl: 74px;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+}
+
+h5 {
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #333333;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+li span {
+    font-weight: 700;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* HEADING */
+
+.heading__title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+    margin-top: 52px;
+    margin-bottom: var(--space-sm);
+}
+
+.heading__subheading {
+    display: flex;
+    align-items: flex-start;
+}
+
+.heading__subheading svg {
+    margin-top: 4px;
+    margin-right: var(--space-sm);
+    flex-shrink: 0;
+
+}
+
+.heading__subheading p {
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 42px;
+    color: #4F4F4F;
+    max-width: 65ch;
+
+}
+
+.heading img {
+    width: 100%;
+}
+
+/* INGREDIENTS */
+
+
+.ingredients {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients__list {
+    padding: 0;
+
+}
+
+.ingredients__list li {
+
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.ingredients__list li p {
+    width: 50ch;
+    line-height: 25px;
+    margin: 0;
+    margin-left: 17px;
+    color: #333333;
+}
+
+.ingredients__list li input {
+    transform: scale(1.65);
+    margin-bottom: 20px;
+    color: #828282;
+
+}
+
+.info__card {
+    display: inline;
+    height: fit-content;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding-top: 57px;
+    padding-right: 51px;
+    padding-left: 43px;
+    padding-bottom: var(--space-xs);
+
+}
+
+.info__card p {
+    margin: 0;
+}
+
+.info__item-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.info__type {
+
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #BDBDBD;
+    white-space: nowrap;
+}
+
+.info__ammount:first-child {
+    color: #F2994A;
+}
+
+.info__ammount {
+
+    text-transform: lowercase;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.info__item-container:first-child i {
+    color: #F2994A;
+
+
+}
+
+.info__item-container i {
+    color: #4F4F4F;
+    font-size: 32px;
+    margin-right: 14px;
+
+}
+
+/* INSTRUCTIONS */
+
+.instructions__list {
+    padding: 0;
+
+}
+
+.instructions__item {
+    margin-bottom: var(--space-xl);
+}
+
+.item__container {
+    display: flex;
+}
+
+.item__description {
+    width: 48ch;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.item__number {
+
+    background: #F2994A;
+    border-radius: 6px;
+    color: white;
+
+    flex-shrink: 0;
+    height: 36px;
+    width: 36px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item__number p {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-weight: 700;
+    vertical-align: middle;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+
+}
+
+.item__description span {
+    font-weight: 700;
+}
+
+.instructions__link p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #BDBDBD;
+    margin: 0;
+    margin-right: 8px;
+
+}
+
+.instructions__link {
+
+    display: flex;
+}
+
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #A9A9A9;
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 100px;
+}
+
+footer a {
+
+    font-weight: 700;
+    color: inherit;
+}
+
+@media (max-width: 1020px) {
+    .info__card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+
+    }
+
+    .info__item-container:nth-child(2) {
+        grid-row-start: 2;
+    }
+
+    .info__item-container:nth-child(3) {
+        grid-row-start: 2;
+    }
+
+    .info__item-container:nth-child(4) {
+        grid-row-start: 2;
+    }
+
+    .ingredients {
+        flex-direction: column-reverse;
+    }
+
+    .container {
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+
+        padding-left: var(--space-sm);
+        padding-right: var(--space-sm);
+    }
+
+    .ingredients {
+        margin-top: 24px;
+    }
+
+    .ingredients__container h4 {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+
+    h5 {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    /* HEADING */
+
+    .heading__title {
+
+        font-size: 24px;
+        margin: 0;
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+
+    .heading__subheading svg {
+        margin-top: 4px;
+        margin-right: var(--space-sm);
+
+    }
+
+    .heading__subheading p {
+
+        font-size: 12px;
+        margin: 0;
+        margin-bottom: var(--space-sm);
+        max-width: 45ch;
+
+    }
+
+    .item__description {
+
+        flex-shrink: 1;
+        font-size: 16px;
+    }
+
+    .instructions__link {
+
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+
+    /* CARD */
+
+    .info__type {
+        font-size: 8px;
+        margin-bottom: 4px;
+    }
+
+    .info__ammount {
+        font-size: 10px;
+    }
+
+    .info__item-container i {
+
+        font-size: 16px;
+
+
+    }
+
+
+
+    .instructions__link p {
+
+        font-size: 12px;
+        margin-right: 8px;
+
+    }
+
+}
